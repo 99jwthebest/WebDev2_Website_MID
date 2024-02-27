@@ -43,6 +43,7 @@ body {
 
 .slider-wrapper .slider-button#prev-slide{
     left: -20px;
+    display: none;
 }
 
 .slider-wrapper .slider-button#next-slide{
@@ -112,3 +113,4 @@ body {
     top: -10px;
     bottom: -10px;
 }
+
