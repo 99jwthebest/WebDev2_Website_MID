@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/ShoppingCart.css">
     <script src="js/shoppingCart.js" defer></script>
 </head>
-<body>
+<body class="showCart">
     <div class="container">
         <header>
             <div class="title">PRODUCT LIST</div>
@@ -18,6 +18,43 @@
                 <span>0</span>
             </div>
         </header>
+
+        <div class="listProduct">
+            <div class="item">
+                <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="">
+                <h2>NAME PRODUCT</h2>
+                <div class="price">$200</div>
+                <button class="addCart">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <div class="item">
+                <div class="image">
+                    <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="">
+                </div>
+                <div class="name">
+                    NAME
+                </div>
+                <div class="totalPrice">
+                    $200
+                </div>
+                <div class="quantity">
+                    <span class="minus"></span>
+                    <span>1</span>
+                    <span class="plus">></span>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">CHECK OUT</button>
+        </div>
     </div>
 
 </body>
