@@ -55,7 +55,39 @@ const addToCart = (product_id) => {
             quantity: 1
         });
     }else{
-        carts[]
+        carts[positionThisProductInCart].quantity = carts[positionThisProductInCart].quantity + 1;
+    }
+    addCartToHTML();
+}
+
+const addCartToHTML = () => {
+    listCartHTML.innerHTML = '';
+    if(carts.length > 0){
+        carts.forEach(cart => {
+            let newCart = document.createElement('div');
+            newCart.classList.add('item');
+            let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
+            let info = listProducts[positionProduct];
+            newCart.innerHTML = `
+            <div class="item">
+                <div class="image">
+                    <img src="${info.image}" alt="">
+                </div>
+                <div class="name">
+                    ${info.name}
+                </div>
+                <div class="totalPrice">
+                    $${info.price * cart.quantity}
+                </div>
+                <div class="quantity">
+                    <span class="minus"><</span>
+                    <span>${cart.quantity}</span>
+                    <span class="plus">></span>
+                </div>
+            </div>
+            `;
+            listCartHTML.appendChild(newCart);
+        })
     }
 }
 
