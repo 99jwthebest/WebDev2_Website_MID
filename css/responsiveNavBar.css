@@ -262,6 +262,43 @@ section#hero {
 
 }
 
+.panelFirstPageContainer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.panel {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid #d1d7dc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #efefef;
+}
+
+.picturePanelWithText {
+    display: flex;
+    /*flex-direction: row-reverse;*/
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picturePanelWithTextImage {
+    max-width: 50%;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
+
 
 /*
 body{
