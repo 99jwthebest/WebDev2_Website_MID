@@ -1,50 +1,50 @@
 [
     {
         "id" : 1,
-        "name" : "LD01 LOUNGE CHAIR",
-        "price": 200,
+        "name" : "FP01 FOOD PRODUCT",
+        "price": 20,
         "image": "images/021424-quick-meals-module-desktop-437x437.png"
     },
     {
         "id" : 2,
-        "name" : "LD02 LOUNGE CHAIR",
-        "price": 200,
+        "name" : "FP02 FOOD PRODUCT",
+        "price": 20,
         "image": "images/021424-quick-meals-module-desktop-437x437.png"
     },
     {
         "id" : 3,
-        "name" : "LD03 LOUNGE CHAIR",
-        "price": 200,
+        "name" : "FP03 FOOD PRODUCT",
+        "price": 20,
         "image": "images/021424-quick-meals-module-desktop-437x437.png"
     },
     {
         "id" : 4,
-        "name" : "LD04 LOUNGE CHAIR",
-        "price": 200,
+        "name" : "FP04 FOOD PRODUCT",
+        "price": 20,
         "image": "images/021424-quick-meals-module-desktop-437x437.png"
     },
     {
         "id" : 5,
-        "name" : "LD05 LOUNGE CHAIR",
-        "price": 200,
+        "name" : "FP05 FOOD PRODUCT",
+        "price": 20,
         "image": "images/021424-quick-meals-module-desktop-437x437.png"
     },
     {
         "id" : 6,
-        "name" : "LD06 LOUNGE CHAIR",
-        "price": 200,
+        "name" : "FP06 FOOD PRODUCT",
+        "price": 20,
         "image": "images/021424-quick-meals-module-desktop-437x437.png"
     },
     {
         "id" : 7,
-        "name" : "LD07 LOUNGE CHAIR",
-        "price": 200,
+        "name" : "FP07 FOOD PRODUCT",
+        "price": 20,
         "image": "images/021424-quick-meals-module-desktop-437x437.png"
     },
     {
         "id" : 8,
-        "name" : "LD08 LOUNGE CHAIR",
-        "price": 200,
+        "name" : "FP08 FOOD PRODUCT",
+        "price": 20,
         "image": "images/021424-quick-meals-module-desktop-437x437.png"
     }
 ]

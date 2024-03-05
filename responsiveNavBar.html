@@ -11,46 +11,205 @@
         crossorigin="anonymous" 
         referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/responsiveNavBar.css">
+        <link rel="stylesheet" href="css/imageSlider.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
         <script src="js/shoppingCart.js" defer></script>
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="js/sliderBarScript.js" defer></script>
 
     </head>
 
-    <body>
+    <body style = "height: 100vh;
+    background-color: #000;
+    background-image: url('../images/backPicture_j.png');
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: 100% 150%;*/">
 
         <header>
             <div class="navbar">
-                <div class="logo"><a href="#">Web Dev Creative</a></div>
+                <div class="logo"><a href="responsiveNavBar.html">Healthy Eats</a></div>
                 <ul class="links">
-                    <li><a href="hero">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="services">Services</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search for Anything.." name="search">
+                          <button type="submit" style="border-radius: 20px;"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="button-container">
+                        <a href="ShoppingCart.html" class="-button"><b>Shop</b></a>
+                        <div class="dropdown-container">
+                            <a href="Programming.html">Fruits & Veggies</a>
+                            <a href="Modeling.html">Bakery</a>
+                            <a href="Drawing.html">Pizza</a>
+                            <a href="Writing.html">Poultry</a>
+                            <a href="Photography.html">Meat</a>
+                
+                
+                            <!-- Add more buttons here -->
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <a href="#" class="-button"><b>Recipes</b></a>
+                        <div class="dropdown-container">
+                            <a href="Programming.html">Fruits & Veggies</a>
+                            <a href="Modeling.html">Bakery</a>
+                            <a href="Drawing.html">Pizza</a>
+                            <a href="Writing.html">Poultry</a>
+                            <a href="Photography.html">Meat</a>
+                
+                
+                            <!-- Add more buttons here -->
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <a href="#" class="-button"><b>Workouts</b></a>
+                        <div class="dropdown-container">
+                            <a href="Programming.html">Fruits & Veggies</a>
+                            <a href="Modeling.html">Bakery</a>
+                            <a href="Drawing.html">Pizza</a>
+                            <a href="Writing.html">Poultry</a>
+                            <a href="Photography.html">Meat</a>
+                
+                
+                            <!-- Add more buttons here -->
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <a href="#" class="-button"><b>Nutrition</b></a>
+                        <div class="dropdown-container">
+                            <a href="Programming.html">Fruits & Veggies</a>
+                            <a href="Modeling.html">Bakery</a>
+                            <a href="Drawing.html">Pizza</a>
+                            <a href="Writing.html">Poultry</a>
+                            <a href="Photography.html">Meat</a>
+                
+                
+                            <!-- Add more buttons here -->
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <a href="#" class="-button"><b>Merch</b></a>
+                        <div class="dropdown-container">
+                            <a href="Programming.html">Fruits & Veggies</a>
+                            <a href="Modeling.html">Bakery</a>
+                            <a href="Drawing.html">Pizza</a>
+                            <a href="Writing.html">Poultry</a>
+                            <a href="Photography.html">Meat</a>
+                
+                
+                            <!-- Add more buttons here -->
+                        </div>
+                    </div>
                 </ul>
-                <a href="#" class="action_btn">Get Started</a>
+                <a href="#" class="action_btn">Sign up</a>
                 <div class="toggle_btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-        </header>
-        <!-- <nav>
-            <input type="checkbox" name="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars">
-
-                </i>
-            </label>
-            <label for="check">DesignX</label>
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Feedback</a></li>
-            </ul>
-        </nav>
-        <section>
             
-        </section> -->
+            <div class="dropdown_menu">
+                <li><a href="hero">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="#" class="action_btn">Get Started</a></li>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero">
+                <h1 style="font-size: 70px;">Eat Healthy. Live Healthy.</h1>
+                <p>
+                    
+                </p>
+            </section>
+        </main>
+
+        <div style="background-color: #fff;
+                    padding-top: 100px;
+                    padding-bottom: 100px;
+                    ">
+            <div class="imageSliderContainer">
+                <div class="slider-wrapper">
+                    <button id="prev-slide" class="slide-button material-symbols-outlined">chevron_left</button>
+                    <div class="image-list">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="quickMeals" class="image-item">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="quickMeals2" class="image-item">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="quickMeals3" class="image-item">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="quickMeals4" class="image-item">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="quickMeals5" class="image-item">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="quickMeals6" class="image-item">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="quickMeals7" class="image-item">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="quickMeals8" class="image-item">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="quickMeals9" class="image-item">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="quickMeals10" class="image-item">
+                    </div>
+                    <button id="next-slide" class="slide-button material-symbols-outlined" style="">chevron_right</button>
+                </div>
+                
+                <div class="slider-scrollbar">
+                    <div class="scrollbar-track">
+                        <div class="scrollbar-thumb">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+            <div style="color: #fff; 
+                    background-color:#242424; 
+                    padding-top: 50px; 
+                    padding-bottom: 120px; 
+                    margin-top: 0px;">
+            <div style="padding-left: 50px; padding-right: 150px; display: inline-block;">
+                Learn Distinct Business<br><br>
+                Teach on Learn Distinct <br><br>
+                Get the app<br><br>
+                About us<br><br>
+                Contact us<br><br>
+            </div>
+            
+            <div style="padding-left: 50px; padding-right: 150px; display: inline-block;">
+                Careers<br><br>
+                Blog<br><br>
+                Help and supports<br><br>
+                Affiliate<br><br>
+                Investors<br><br>
+            </div>
+        
+            <div style="padding-left: 50px; padding-right: 150px; display: inline-block;">
+                Terms <br><br>
+                Privacy policy<br><br>
+                Do not sell or share my personal information<br><br>
+                Sitemap<br><br>
+                Accessibility statement<br><br>
+            </div>
+        
+           <div style="float: right; padding-top: 50px; padding-right: 80px;"> © 2024 Healthy Eats, Inc. </div>
+        </div>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onClick = function (){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                 ? 'fa-solid fa-xmark'
+                 : 'fa-solid fa-bars'
+            }
+        </script>
+
     </body>
 </html>

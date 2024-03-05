@@ -21,7 +21,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
 }
 
 header .icon-cart {
@@ -77,6 +76,12 @@ header .icon-cart span{
     margin-top: 10px;
     border: none;
     cursor: pointer;
+}
+
+.listProduct .item button:hover{
+    color: #ffc400;
+    background-color: #4d4c48;
+
 }
 
 .cartTab{

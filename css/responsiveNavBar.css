@@ -6,11 +6,7 @@
 }
 
 body{
-    height: 100vh;
-    background-color: #000;
-    background-image: url('../images/backPicture_j.png');
-    background-size: cover;
-    background-position: center;
+    
 }
 
 li {
@@ -30,6 +26,9 @@ a:hover{
 header{
     position: relative;
     padding: 0 2rem;
+    background-color: #000;
+    
+
 }
 
 .navbar{
@@ -40,6 +39,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .navbar .logo a{
@@ -49,7 +49,7 @@ header{
 
 .navbar .links{
     display: flex;
-    gap: 2rem;
+    gap: 1.75rem;
 }
 
 .navbar .toggle_btn{
@@ -70,6 +70,198 @@ header{
     font-weight: bold;
     cursor: pointer;
 }
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/* Dropdown Menu */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* HERO */
+section#hero {
+    height: calc(70vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.9);
+
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media (max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+/* Search Container Area */
+
+/* Style the search box inside the navigation bar */
+.navbar .search-container {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar input[type=text] {
+    padding: 6vw;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 8vw;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    font-size: 17px;
+    border: 2px solid #000;
+    border-radius: 30px;
+}
+/*
+
+  .navbar .search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar .search-container button:hover {
+    background: #ccc;
+  }
+
+  /* Search Container Area */
+
+  /* Style for the main button container */
+
+.navbar .button-container {
+    position: relative;
+    display: inline-block;
+    /*background-color: #ffb521;*/
+    padding-top: 23px;
+    padding-bottom:0px;
+
+}
+.navbar .button-container:hover {
+    color: rgb(0, 0, 0);
+
+}
+
+/* Style for the main button */
+.navbar .main-button {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 27px 16px;
+    text-decoration: none;
+}
+
+/* Style for the dropdown container */
+.navbar .dropdown-container {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 200px;
+    text-align: Left;
+    z-index: 1;
+}
+
+/* Style for the dropdown buttons */
+.navbar .dropdown-container a {
+    display: block;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+/* Show the dropdown container on hover */
+.navbar .button-container:hover .dropdown-container {
+    display: block;
+    margin-top: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* Style for the main button */
+.navbar .main-button:hover {
+   color: #ffb521;
+
+}
+
+/* Style for the main button */
+/*
+.navbar .main-button:hover  .overlay{
+    opacity: 1; 
+     Show overlay on hover 
+    }
+    */
+
+/* Style for the main button */
+.navbar .dropdown-container a:hover {
+  color: #ffb521;
+
+}
+
 
 /*
 body{
