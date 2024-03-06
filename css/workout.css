@@ -1,16 +1,12 @@
 *{
-    margin: 0;
-    padding: 0;
 }
 
 body{
-    background: #2e8d86;
 }
 
 .videoContainer{
     width: 80%;
-    margin: 80px auto;
-
+    margin: 60px auto;
 }
 
 .videoContainer h1{
@@ -36,8 +32,9 @@ body{
     width: 83%;
     margin: auto;
     position: relative;
-    border-radius: 6px;
+    border-radius: 60px;
     overflow: hidden;
+
 }
 
 .small-img-row{
@@ -67,7 +64,7 @@ body{
 }
 
 .play-btn{
-    width: 60px;
+    width: 100px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -76,7 +73,7 @@ body{
 }
 
 .small-img .play-btn{
-    width: 35px;
+    width: 40px;
 
 }
 
@@ -84,8 +81,12 @@ body{
     width: 80%;
     position: absolute;
     left: 50%;
+    transform: translate(-50%, -107%);
+    z-index: 2;
+    float: left;
+    /*
     top: 50%;
-    transform: translate(-50%, -50%);
+    */
     display: none;
 }
 
