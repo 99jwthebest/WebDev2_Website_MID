@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Responsive Navbar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/workout.css">
+    </head>
+
+    <body>
+
+        
+        <div class="videoContainer">
+            <h1>HOW TO MAKE A VIDEO GALLERY</h1>
+            <div class="vidRow">
+                <div class="vidCol">
+                    <div class="feature-img">
+                        <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="" width="100%">
+                        <img src="images/playButton.png" alt="" class="play-btn"
+                        onclick="playVideo('images/vid1.mp4')">
+                    </div>
+                </div>
+                <div class="vidCol">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="" width="100%">
+                            <img src="images/playButton.png" alt="" class="play-btn"
+                            onclick="playVideo('images/vid2.mp4')">
+                        </div>
+                        <p>How to add multiple videos in a website or<br> to make video gallery.</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="" width="100%">
+                            <img src="images/playButton.png" alt="" class="play-btn"
+                            onclick="playVideo('images/vid3.mp4')">
+                        </div>
+                        <p>How to add multiple videos in a website or<br> to make video gallery.</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="images/021424-quick-meals-module-desktop-437x437.png" alt="" width="100%">
+                            <img src="images/playButton.png" alt="" class="play-btn"
+                            onclick="playVideo('images/vid4.mp4')">
+                        </div>
+                        <p>How to add multiple videos in a website or<br> to make video gallery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="" type="video/mp4">
+            </video>
+            <img src="images/close.png" class="close-btn"
+            onclick="stopVideo()">
+        </div>
+
+        <script>
+            var videoPlayer = document.getElementById("videoPlayer");
+            var myVideo = document.getElementById("myVideo");
+
+            function stopVideo(){
+                videoPlayer.style.display = "none";
+            }
+
+            function playVideo(file){
+                myVideo.src = file;
+                videoPlayer.style.display = "block";
+            }
+
+        </script>
+
+    </body>
+</html>
