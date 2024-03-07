@@ -114,11 +114,12 @@
             </div>
             
             <div class="dropdown_menu">
-                <li><a href="hero">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="services">Services</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="#" class="action_btn">Get Started</a></li>
+                <li><a href="ShoppingCart.html">Shop</a></li>
+                <li><a href="about">Recipes</a></li>
+                <li><a href="workoutPage.html">Workouts</a></li>
+                <li><a href="contact">Nutrition</a></li>
+                <li><a href="contact">Merch</a></li>
+                <li><a href="#" class="action_btn">Sign up</a></li>
             </div>
         </header>
 
@@ -209,58 +210,83 @@
             
             
         </div>
-            <div style="color: #fff; 
-                    background-color:#242424; 
-                    padding-top: 50px; 
-                    padding-bottom: 120px; 
-                    margin-top: 0px;">
-            <div style="padding-left: 50px; 
-                        padding-right: 150px; 
-                        display: inline-block;">
-                <p style="font-size: 25px; 
-                        font-weight: 700;
-                        margin-bottom: 20px;">
-                    Company</p>
-                    
-                    Healthy Eats Business<br><br>
-                    Teach on Learn Distinct <br><br>
-                    Get the app<br><br>
-                    About us<br><br>
-                    Contact us<br><br>
-            </div>
-            
-            <div style="padding-left: 50px; 
-                        padding-right: 150px; 
-                        display: inline-block;">
-                Careers<br><br>
-                Blog<br><br>
-                Help and supports<br><br>
-                Affiliate<br><br>
-                Investors<br><br>
-            </div>
-        
-            <div style="padding-left: 50px; 
-                        padding-right: 150px; 
-                        display: inline-block;">
-                Terms <br><br>
-                Privacy policy<br><br>
-                Do not sell or share my personal information<br><br>
-                Sitemap<br><br>
-                Accessibility statement<br><br>
-            </div>
-        
-           <div style="float: right; padding-top: 50px; padding-right: 80px;"> © 2024 Healthy Eats, Inc. </div>
-        </div>
+        <div style="color: #fff; 
+                background-color:#242424; 
+                padding-top: 70px; 
+                padding-bottom: 120px; 
+                ">
+            <div style="margin: auto;
+                width: 80%;">
 
+                <div style="padding-left: 50px; 
+                            padding-right: 150px; 
+                            display: inline-block;">
+                    <p style="font-size: 25px; 
+                            font-weight: 700;
+                            margin-bottom: 20px;">
+                        Company</p>
+                        
+                        Healthy Eats Business<br><br>
+                        Teach on Learn Distinct <br><br>
+                        Get the app<br><br>
+                        About us<br><br>
+                        Contact us<br><br>
+                    </div>
+                    
+                    <div style="padding-left: 50px; 
+                            padding-right: 150px; 
+                            display: inline-block;">
+                    <p style="font-size: 25px; 
+                    font-weight: 700;
+                    margin-bottom: 20px;">
+                    Our services</p>
+                    
+                    Careers<br><br>
+                    Blog<br><br>
+                    Help and supports<br><br>
+                    Affiliate<br><br>
+                    Investors<br><br>
+                </div>
+                
+                <div style="padding-left: 50px; 
+                            padding-right: 150px; 
+                            display: inline-block;">
+                    <p style="font-size: 25px; 
+                    font-weight: 700;
+                    margin-bottom: 20px;">
+                    Customer Service</p>
+                    
+                    Terms <br><br>
+                    Privacy policy<br><br>
+                    Do not sell or share my personal information<br><br>
+                    Sitemap<br><br>
+                    Accessibility statement<br><br>
+                </div>
+                
+                <div style="padding-top: 100px; padding-right: 80px;
+                text-align: center;"> © 2024 Healthy Eats, Inc. </div>
+                <div style="padding-top: 20px; 
+                            padding-right: 80px;
+                            text-align: center;"> 
+                            Privacy Policy | Terms & Conditions | Site map 
+                </div>
+                <div style="padding-top: 20px; 
+                            padding-right: 80px;
+                            text-align: center;"> 
+                            Partners
+                </div>
+            </div>
+        </div>
+        
         <script>
             const toggleBtn = document.querySelector('.toggle_btn');
             const toggleBtnIcon = document.querySelector('.toggle_btn i');
             const dropDownMenu = document.querySelector('.dropdown_menu');
-
+            
             toggleBtn.addEventListener('click', () => {
                 dropDownMenu.classList.toggle('open');
                 const isOpen = dropDownMenu.classList.contains('open');
-
+                
                 toggleBtnIcon.className = isOpen
                     ? 'fa-solid fa-xmark'
                     : 'fa-solid fa-bars';
